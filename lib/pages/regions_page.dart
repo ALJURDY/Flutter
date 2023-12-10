@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_examen1/components/drawer.dart';
 
 class RegionPage extends StatelessWidget {
   const RegionPage({super.key, required this.title});
@@ -12,6 +13,7 @@ class RegionPage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(title),
       ),
+      drawer: const AppDrawer(),
       body: Container(),
     );
   }
